@@ -1,5 +1,8 @@
 package ch.fhnw.oop2.module07.ab4;
 
+import java.util.Collection;
+import java.util.Collections;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
@@ -27,6 +30,8 @@ final class ObservableCollection extends VBox {
 		
 		shuffle = new Button("Shuffle");
 		toolBar = new ToolBar(shuffle);
+		shuffle.setOnAction(event -> Collections.shuffle(observableList));
+		
 		
 		listView = new ListView<>(observableList);	
 	}

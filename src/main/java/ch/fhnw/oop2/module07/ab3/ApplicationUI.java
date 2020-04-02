@@ -19,7 +19,7 @@ public class ApplicationUI extends VBox {
 
 
 	private void initializeControls(){
-	
+		
 		slider = new Slider(1,10,5.5);
 		valueField = new TextField();
 		valueField.textProperty().bindBidirectional(slider.valueProperty(), new NumberStringConverter());
